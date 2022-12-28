@@ -5,8 +5,221 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>
-        <h1>Admin Dashboard</h1>
+        <div class="header">
+            <div class="searchbar">
+                <img src="images/icons/search.svg" alt="icon" class="icon">
+                <input type="search" id="search" name="search">
+            </div>
+            <div class="profile">
+                <img src="images/icons/notifications.svg" alt="icon" class="icon">
+                <img src="images/profiles/shamblonaut.png" alt="pfp" class="pfp">
+                <p class="name">Shaheem BN</p>
+            </div>
+            <div class="greet">
+                <img src="images/profiles/shamblonaut.png" alt="pfp" class="pfp">
+                <p id="greeting">Hi there,</p>
+                <p class="name">Shaheem BN (@shamblonaut)</p>
+            </div>
+            <div class="actions">
+                <button type="button">New</button>
+                <button type="button">Upload</button>
+                <button type="button">Share</button>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="logo"><img src="images/icons/cloud.svg" class="icon"> Dashboard</div>
+            <div class="sidebar-group">
+                <a href="/">
+                    <div class="sidebar-item">
+                        <img src="images/icons/home.svg" alt="icon" class="icon">
+                        <p>Home</p>
+                    </div>
+                </a>
+                <a href="/">
+                    <div class="sidebar-item">
+                        <img src="images/icons/person.svg" alt="icon" class="icon">
+                        <p>Profile</p>
+                    </div>
+                </a>
+                <a href="/">
+                    <div class="sidebar-item">
+                        <img src="images/icons/chat.svg" alt="icon" class="icon">
+                        <p>Messages</p>
+                    </div>
+                </a>
+                <a href="/">
+                    <div class="sidebar-item">
+                        <img src="images/icons/history.svg" alt="icon" class="icon">
+                        <p>History</p>
+                    </div>
+                </a>
+                <a href="/">
+                    <div class="sidebar-item">
+                        <img src="images/icons/task.svg" alt="icon" class="icon">
+                        <p>Tasks</p>
+                    </div>
+                </a>
+                <a href="/">
+                    <div class="sidebar-item">
+                        <img src="images/icons/groups.svg" alt="icon" class="icon">
+                        <p>Communities</p>
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-group">
+                <a href="/">
+                    <div class="sidebar-item">
+                        <img src="images/icons/settings.svg" alt="icon" class="icon">
+                        <p>Settings</p>
+                    </div>
+                </a>
+                <a href="/">
+                    <div class="sidebar-item">
+                        <img src="images/icons/help.svg" alt="icon" class="icon">
+                        <p>Support</p>
+                    </div>
+                </a>
+                <a href="/">
+                    <div class="sidebar-item">
+                        <img src="images/icons/shield.svg" alt="icon" class="icon">
+                        <p>Privacy</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="projects">
+                <div class="section-title">Your Projects</div>
+                <div class="project-cards">
+                    <div class="project card">
+                        <a href="https://shamblonaut.github.io/malculator"><p class="title">Malculator</p></a>
+                        <p class="description">
+                            A calculator application made with js (A TOP project)
+                        </p>
+                        <div class="project-actions">
+                            <a href="/"><img src="images/icons/star.svg" alt="icon" class="icon"></a>
+                            <a href="/"><img src="images/icons/eye.svg" alt="icon" class="icon"></a>
+                            <a href="/"><img src="images/icons/fork.svg" alt="icon" class="icon"></a>
+                        </div>
+                    </div>
+                    <div class="project card">
+                        <a href="https://shamblonaut.github.io/odin-rps"><p class="title">RPS</p></a>
+                        <p class="description">
+                            An interactive game of Rock, Paper, Scissors made with javascript
+                        </p>
+                        <div class="project-actions">
+                            <a href="/"><img src="images/icons/star.svg" alt="icon" class="icon"></a>
+                            <a href="/"><img src="images/icons/eye.svg" alt="icon" class="icon"></a>
+                            <a href="/"><img src="images/icons/fork.svg" alt="icon" class="icon"></a>
+                        </div>
+                    </div>
+                    <div class="project card">
+                        <a href="https://shamblonaut.github.io/odin-dashboard"><p class="title">Odin Dashboard</p></a>
+                        <p class="description">
+                            An implementation of an Admin Dashboard design for learning CSS Grid on The Odin Project
+                        </p>
+                        <div class="project-actions">
+                            <a href="/"><img src="images/icons/star.svg" alt="icon" class="icon"></a>
+                            <a href="/"><img src="images/icons/eye.svg" alt="icon" class="icon"></a>
+                            <a href="/"><img src="images/icons/fork.svg" alt="icon" class="icon"></a>
+                        </div>
+                    </div>
+                    <div class="project card">
+                        <a href="https://shamblonaut.github.io/odin-signup"><p class="title">Odin Signup</p></a>
+                        <p class="description">
+                            A demo Sign-Up page to check my form making skills
+                        </p>
+                        <div class="project-actions">
+                            <a href="/"><img src="images/icons/star.svg" alt="icon" class="icon"></a>
+                            <a href="/"><img src="images/icons/eye.svg" alt="icon" class="icon"></a>
+                            <a href="/"><img src="images/icons/fork.svg" alt="icon" class="icon"></a>
+                        </div>
+                    </div>
+                    <div class="project card">
+                        <a href="https://shamblonaut.github.io/odin-landing-page"><p class="title">Odin Landing Page</p></a>
+                        <p class="description">
+                            A project for the flexbox section of Foundations course in TOP
+                        </p>
+                        <div class="project-actions">
+                            <a href="/"><img src="images/icons/star.svg" alt="icon" class="icon"></a>
+                            <a href="/"><img src="images/icons/eye.svg" alt="icon" class="icon"></a>
+                            <a href="/"><img src="images/icons/fork.svg" alt="icon" class="icon"></a>
+                        </div>
+                    </div>
+                    <div class="project card">
+                        <a href="https://shamblonaut.github.io/odin-recipes"><p class="title">Odin Recipes</p></a>
+                        <p class="description">
+                            A recipe website made as a project for the foundation course of TOP
+                        </p>
+                        <div class="project-actions">
+                            <a href="/"><img src="images/icons/star.svg" alt="icon" class="icon"></a>
+                            <a href="/"><img src="images/icons/eye.svg" alt="icon" class="icon"></a>
+                            <a href="/"><img src="images/icons/fork.svg" alt="icon" class="icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-feed">
+                <div class="announcements">
+                    <div class="section-title">Announcements</div>
+                    <div class="content-card card">
+                        <div class="announcement">
+                            <div class="title">
+                                <a href="/"><p>Site Maintenance</p></a>
+                            </div>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+                            </div>
+                            <hr class="divider">
+                        </div>
+                        <div class="announcement">
+                            <div class="title">
+                                <a href="/"><p>Site Maintenance</p></a>
+                            </div>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+                            </div>
+                            <hr class="divider">
+                        </div>
+                        <div class="announcement">
+                            <div class="title">
+                                <a href="/"><p>Site Maintenance</p></a>
+                            </div>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending">
+                    <div class="section-title">Trending</div>
+                    <div class="content-card card">
+                        <div class="trend">
+                            <img class="pfp" src="images/profiles/studiousgamer.png" alt="pfp">
+                            <a href="https://github.com/studiousgamer/"><p class="handle">@studiousgamer</p></a>
+                            <a href="https://github.com/studiousgamer/Tic-Tac-Toe-AI"><p class="trending-project">Tic-Tac-Toe AI</p></a>
+                        </div>
+                        <div class="trend">
+                            <img class="pfp" src="images/profiles/floatingcomet.png" alt="pfp">
+                            <a href="https://github.com/FloatingComet62/"><p class="handle">@FloatingComet62</p></a>
+                            <a href="https://github.com/FloatingComet62/CometOS"><p class="trending-project">CometOS</p></a>
+                        </div>
+                        <div class="trend">
+                            <img class="pfp" src="images/profiles/marcel.png" alt="pfp">
+                            <a href="https://github.com/marceldobehere/"><p class="handle">@marceldobehere</p></a>
+                            <a href="https://github.com/marceldobehere/MaslOS"><p class="trending-project">MaslOS</p></a>
+                        </div>
+                        <div class="trend">
+                            <img class="pfp" src="images/profiles/shamblonaut.png" alt="pfp">
+                            <a href="https://github.com/shamblonaut/"><p class="handle">@shamblonaut</p></a>
+                            <a href="https://shamblonaut.github.io/malculator"><p class="trending-project">Malculator</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
