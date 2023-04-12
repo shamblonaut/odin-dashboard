@@ -1,225 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Admin Dashboard</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    </head>
-    <body>
-        <div class="header">
-            <div class="searchbar">
-                <img src="images/icons/search.svg" alt="icon" class="icon">
-                <input type="search" id="search" name="search">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Odin Grid Services</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="brand"><a href="#"><img src="res/images/icons/cloud.svg" alt="logo" class="icon"> Dashboard</a></div>
+        <div class="nav">
+            <div class="nav-group">
+                <div class="nav-content"><a href="#"><img src="res/images/icons/home.svg" alt="home" class="icon"> Home</a></div>
+                <div class="nav-content"><a href="#"><img src="res/images/icons/person.svg" alt="profile" class="icon"> Profile</a></div>
+                <div class="nav-content"><a href="#"><img src="res/images/icons/chat.svg" alt="messages" class="icon"> Messages</a></div>
+                <div class="nav-content"><a href="#"><img src="res/images/icons/history.svg" alt="history" class="icon"> History</a></div>
+                <div class="nav-content"><a href="#"><img src="res/images/icons/task.svg" alt="tasks" class="icon"> Tasks</a></div>
+                <div class="nav-content"><a href="#"><img src="res/images/icons/groups.svg" alt="communities" class="icon"> Communities</a></div>
             </div>
-            <div class="profile">
-                <img src="images/icons/notifications.svg" alt="icon" class="icon">
-                <img src="images/profiles/shamblonaut.png" alt="pfp" class="pfp">
-                <p class="name">Shaheem BN</p>
-            </div>
-            <div class="greet">
-                <img src="images/profiles/shamblonaut.png" alt="pfp" class="pfp">
-                <p id="greeting">Hi there,</p>
-                <p class="name">Shaheem BN (@shamblonaut)</p>
-            </div>
-            <div class="actions">
-                <button type="button">New</button>
-                <button type="button">Upload</button>
-                <button type="button">Share</button>
+            <div class="nav-group">
+                <div class="nav-content"><a href="#"><img src="res/images/icons/settings.svg" alt="settings" class="icon"> Settings</a></div>
+                <div class="nav-content"><a href="#"><img src="res/images/icons/help.svg" alt="support" class="icon"> Support</a></div>
+                <div class="nav-content"><a href="#"><img src="res/images/icons/shield.svg" alt="privacy" class="icon"> Privacy</a></div>
             </div>
         </div>
-        <div class="sidebar">
-            <div class="logo"><img src="images/icons/cloud.svg" class="icon"> Dashboard</div>
-            <div class="sidebar-group">
-                <a href="/">
-                    <div class="sidebar-item">
-                        <img src="images/icons/home.svg" alt="icon" class="icon">
-                        <p>Home</p>
-                    </div>
-                </a>
-                <a href="/">
-                    <div class="sidebar-item">
-                        <img src="images/icons/person.svg" alt="icon" class="icon">
-                        <p>Profile</p>
-                    </div>
-                </a>
-                <a href="/">
-                    <div class="sidebar-item">
-                        <img src="images/icons/chat.svg" alt="icon" class="icon">
-                        <p>Messages</p>
-                    </div>
-                </a>
-                <a href="/">
-                    <div class="sidebar-item">
-                        <img src="images/icons/history.svg" alt="icon" class="icon">
-                        <p>History</p>
-                    </div>
-                </a>
-                <a href="/">
-                    <div class="sidebar-item">
-                        <img src="images/icons/task.svg" alt="icon" class="icon">
-                        <p>Tasks</p>
-                    </div>
-                </a>
-                <a href="/">
-                    <div class="sidebar-item">
-                        <img src="images/icons/groups.svg" alt="icon" class="icon">
-                        <p>Communities</p>
-                    </div>
-                </a>
-            </div>
-            <div class="sidebar-group">
-                <a href="/">
-                    <div class="sidebar-item">
-                        <img src="images/icons/settings.svg" alt="icon" class="icon">
-                        <p>Settings</p>
-                    </div>
-                </a>
-                <a href="/">
-                    <div class="sidebar-item">
-                        <img src="images/icons/help.svg" alt="icon" class="icon">
-                        <p>Support</p>
-                    </div>
-                </a>
-                <a href="/">
-                    <div class="sidebar-item">
-                        <img src="images/icons/shield.svg" alt="icon" class="icon">
-                        <p>Privacy</p>
-                    </div>
-                </a>
-            </div>
+    </div>
+    
+    <div class="header">
+        <div class="searchbar">
+            <img src="res/images/icons/search.svg" alt="search" class="icon">
+            <input type="search" name="search-bar" id="search-bar">
         </div>
-        <div class="content">
+        <div class="profile">
+            <img src="res/images/icons/notifications.svg" alt="notifications" class="icon">
+            <img src="res/images/profiles/shamblonaut.png" alt="Profile Picture" class="pfp">
+            <div class="profile-name">Shaheem BN</div>
+        </div>
+        <div class="greeting">
+            <img src="res/images/profiles/shamblonaut.png" alt="Profile Picture" class="pfp">
+            <div class="greet">Hi there,</div>
+            <div class="name">Shaheem BN (@shamblonaut)</div>
+        </div>
+        <div class="actions">
+            <a href="#"><button id="new">New</button></a>
+            <a href="#"><button id="upload">Upload</button></a>
+            <a href="#"><button id="share">Share</button></a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="projects-section">
+            <div class="heading">Your Projects</div>
             <div class="projects">
-                <div class="section-title">Your Projects</div>
-                <div class="project-cards">
-                    <div class="project card">
-                        <a href="https://shamblonaut.github.io/malculator"><p class="title">Malculator</p></a>
-                        <p class="description">
-                            A calculator application made with js (A TOP project)
-                        </p>
-                        <div class="project-actions">
-                            <a href="/"><img src="images/icons/star.svg" alt="icon" class="icon"></a>
-                            <a href="/"><img src="images/icons/eye.svg" alt="icon" class="icon"></a>
-                            <a href="/"><img src="images/icons/fork.svg" alt="icon" class="icon"></a>
-                        </div>
+                <div class="project">
+                    <div class="project-name"><a href="https://github.com/shamblonaut/malculator/">Malculator</a></div>
+                    <div class="project-description">
+                        A calculator application made with js (A TOP project)
                     </div>
-                    <div class="project card">
-                        <a href="https://shamblonaut.github.io/odin-rps"><p class="title">RPS</p></a>
-                        <p class="description">
-                            An interactive game of Rock, Paper, Scissors made with javascript
-                        </p>
-                        <div class="project-actions">
-                            <a href="/"><img src="images/icons/star.svg" alt="icon" class="icon"></a>
-                            <a href="/"><img src="images/icons/eye.svg" alt="icon" class="icon"></a>
-                            <a href="/"><img src="images/icons/fork.svg" alt="icon" class="icon"></a>
-                        </div>
-                    </div>
-                    <div class="project card">
-                        <a href="https://shamblonaut.github.io/odin-dashboard"><p class="title">Odin Dashboard</p></a>
-                        <p class="description">
-                            An implementation of an Admin Dashboard design for learning CSS Grid on The Odin Project
-                        </p>
-                        <div class="project-actions">
-                            <a href="/"><img src="images/icons/star.svg" alt="icon" class="icon"></a>
-                            <a href="/"><img src="images/icons/eye.svg" alt="icon" class="icon"></a>
-                            <a href="/"><img src="images/icons/fork.svg" alt="icon" class="icon"></a>
-                        </div>
-                    </div>
-                    <div class="project card">
-                        <a href="https://shamblonaut.github.io/odin-signup"><p class="title">Odin Signup</p></a>
-                        <p class="description">
-                            A demo Sign-Up page to check my form making skills
-                        </p>
-                        <div class="project-actions">
-                            <a href="/"><img src="images/icons/star.svg" alt="icon" class="icon"></a>
-                            <a href="/"><img src="images/icons/eye.svg" alt="icon" class="icon"></a>
-                            <a href="/"><img src="images/icons/fork.svg" alt="icon" class="icon"></a>
-                        </div>
-                    </div>
-                    <div class="project card">
-                        <a href="https://shamblonaut.github.io/odin-landing-page"><p class="title">Odin Landing Page</p></a>
-                        <p class="description">
-                            A project for the flexbox section of Foundations course in TOP
-                        </p>
-                        <div class="project-actions">
-                            <a href="/"><img src="images/icons/star.svg" alt="icon" class="icon"></a>
-                            <a href="/"><img src="images/icons/eye.svg" alt="icon" class="icon"></a>
-                            <a href="/"><img src="images/icons/fork.svg" alt="icon" class="icon"></a>
-                        </div>
-                    </div>
-                    <div class="project card">
-                        <a href="https://shamblonaut.github.io/odin-recipes"><p class="title">Odin Recipes</p></a>
-                        <p class="description">
-                            A recipe website made as a project for the foundation course of TOP
-                        </p>
-                        <div class="project-actions">
-                            <a href="/"><img src="images/icons/star.svg" alt="icon" class="icon"></a>
-                            <a href="/"><img src="images/icons/eye.svg" alt="icon" class="icon"></a>
-                            <a href="/"><img src="images/icons/fork.svg" alt="icon" class="icon"></a>
-                        </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/shamblonaut/malculator/"><img src="res/images/icons/star.svg" alt="star" class="icon"></a>
+                        <a href="https://github.com/shamblonaut/malculator/subscription"><img src="res/images/icons/eye.svg" alt="watch" class="icon"></a>
+                        <a href="https://github.com/shamblonaut/malculator/fork"><img src="res/images/icons/fork.svg" alt="fork" class="icon"></a>
                     </div>
                 </div>
-            </div>
-            <div class="content-feed">
-                <div class="announcements">
-                    <div class="section-title">Announcements</div>
-                    <div class="content-card card">
-                        <div class="announcement">
-                            <div class="title">
-                                <a href="/"><p>Site Maintenance</p></a>
-                            </div>
-                            <div class="description">
-                                <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
-                            </div>
-                            <hr class="divider">
-                        </div>
-                        <div class="announcement">
-                            <div class="title">
-                                <a href="/"><p>Site Maintenance</p></a>
-                            </div>
-                            <div class="description">
-                                <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
-                            </div>
-                            <hr class="divider">
-                        </div>
-                        <div class="announcement">
-                            <div class="title">
-                                <a href="/"><p>Site Maintenance</p></a>
-                            </div>
-                            <div class="description">
-                                <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
-                            </div>
-                        </div>
+                <div class="project">
+                    <div class="project-name"><a href="https://github.com/shamblonaut/etch-a-sketch/">Etch a Sketch</a></div>
+                    <div class="project-description">
+                        A place to apply your creativity into a beautiful drawing
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/shamblonaut/etch-a-sketch/"><img src="res/images/icons/star.svg" alt="star" class="icon"></a>
+                        <a href="https://github.com/shamblonaut/etch-a-sketch/subscription"><img src="res/images/icons/eye.svg" alt="watch" class="icon"></a>
+                        <a href="https://github.com/shamblonaut/etch-a-sketch/fork"><img src="res/images/icons/fork.svg" alt="fork" class="icon"></a>
                     </div>
                 </div>
-                <div class="trending">
-                    <div class="section-title">Trending</div>
-                    <div class="content-card card">
-                        <div class="trend">
-                            <img class="pfp" src="images/profiles/studiousgamer.png" alt="pfp">
-                            <a href="https://github.com/studiousgamer/"><p class="handle">@studiousgamer</p></a>
-                            <a href="https://github.com/studiousgamer/Tic-Tac-Toe-AI"><p class="trending-project">Tic-Tac-Toe AI</p></a>
-                        </div>
-                        <div class="trend">
-                            <img class="pfp" src="images/profiles/floatingcomet.png" alt="pfp">
-                            <a href="https://github.com/FloatingComet62/"><p class="handle">@FloatingComet62</p></a>
-                            <a href="https://github.com/FloatingComet62/CometOS"><p class="trending-project">CometOS</p></a>
-                        </div>
-                        <div class="trend">
-                            <img class="pfp" src="images/profiles/marcel.png" alt="pfp">
-                            <a href="https://github.com/marceldobehere/"><p class="handle">@marceldobehere</p></a>
-                            <a href="https://github.com/marceldobehere/MaslOS"><p class="trending-project">MaslOS</p></a>
-                        </div>
-                        <div class="trend">
-                            <img class="pfp" src="images/profiles/shamblonaut.png" alt="pfp">
-                            <a href="https://github.com/shamblonaut/"><p class="handle">@shamblonaut</p></a>
-                            <a href="https://shamblonaut.github.io/malculator"><p class="trending-project">Malculator</p></a>
-                        </div>
+                <div class="project">
+                    <div class="project-name"><a href="https://github.com/shamblonaut/odin-rps/">Odin RPS</a></div>
+                    <div class="project-description">
+                        An interactive game of Rock, Paper, Scissors made with javascript
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/shamblonaut/odin-rps/"><img src="res/images/icons/star.svg" alt="star" class="icon"></a>
+                        <a href="https://github.com/shamblonaut/odin-rps/subscription"><img src="res/images/icons/eye.svg" alt="watch" class="icon"></a>
+                        <a href="https://github.com/shamblonaut/odin-rps/fork"><img src="res/images/icons/fork.svg" alt="fork" class="icon"></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-name"><a href="https://github.com/shamblonaut/odin-recipes/">Odin Recipes</a></div>
+                    <div class="project-description">
+                        A website that provides recipes for delicious food
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/shamblonaut/odin-recipes/"><img src="res/images/icons/star.svg" alt="star" class="icon"></a>
+                        <a href="https://github.com/shamblonaut/odin-recipes/subscription"><img src="res/images/icons/eye.svg" alt="watch" class="icon"></a>
+                        <a href="https://github.com/shamblonaut/odin-recipes/fork"><img src="res/images/icons/fork.svg" alt="fork" class="icon"></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-name"><a href="https://github.com/shamblonaut/odin-signup/">Odin Signup</a></div>
+                    <div class="project-description">
+                        A demo Sign-Up page to check my form making skills.
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/shamblonaut/odin-signup/"><img src="res/images/icons/star.svg" alt="star" class="icon"></a>
+                        <a href="https://github.com/shamblonaut/odin-signup/subscription"><img src="res/images/icons/eye.svg" alt="watch" class="icon"></a>
+                        <a href="https://github.com/shamblonaut/odin-signup/fork"><img src="res/images/icons/fork.svg" alt="fork" class="icon"></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-name"><a href="https://github.com/shamblonaut/odin-dashboard/">Odin Dashboard</a></div>
+                    <div class="project-description">
+                        An implementation of an Admin Dashboard design for learning CSS Grid on The Odin Project
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/shamblonaut/odin-dashboard/"><img src="res/images/icons/star.svg" alt="star" class="icon"></a>
+                        <a href="https://github.com/shamblonaut/odin-dashboard/subscription"><img src="res/images/icons/eye.svg" alt="watch" class="icon"></a>
+                        <a href="https://github.com/shamblonaut/odin-dashboard/fork"><img src="res/images/icons/fork.svg" alt="fork" class="icon"></a>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+        <div class="main-side-section">
+            <div class="announcements-section">
+                <div class="heading">Announcements</div>
+                <div class="announcements">
+                    <div class="announcement">
+                        <div class="announcement-title"><a href="#">Site Maintenance</a></div>
+                        <div class="announcement-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, illum.</div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="announcement">
+                        <div class="announcement-title"><a href="#">Community Share Day</a></div>
+                        <div class="announcement-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, corporis?</div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="announcement">
+                        <div class="announcement-title"><a href="#">Updated Privacy Policy</a></div>
+                        <div class="announcement-details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, distinctio.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="trending-projects-section">
+                <div class="heading">Trending</div>
+                <div class="trending-projects">
+                    <div class="trending-project">
+                        <a href="https://github.com/studiousgamer/"><img src="res/images/profiles/studiousgamer.png" alt="pfp" class="pfp author-pfp"></a>
+                        <div class="author-handle"><a href="https://github.com/studiousgamer/">@studiousgamer</a></div>
+                        <div class="trending-project-name"><a href="https://github.com/studiousgamer/Tic-Tac-Toe-AI/">Tic-Tac-Toe AI</a></div>
+                    </div>
+                    <div class="trending-project">
+                        <a href="https://github.com/FloatingComet62/"><img src="res/images/profiles/floatingcomet.png" alt="pfp" class="pfp author-pfp"></a>
+                        <div class="author-handle"><a href="https://github.com/FloatingComet62/">@FloatingComet62</a></div>
+                        <div class="trending-project-name"><a href="https://github.com/FloatingComet62/CometOS/">CometOS</a></div>
+                    </div>
+                    <div class="trending-project">
+                        <a href="https://github.com/marceldobehere/"><img src="res/images/profiles/marcel.png" alt="pfp" class="pfp author-pfp"></a>
+                        <div class="author-handle"><a href="https://github.com/marceldobehere/">@marceldobehere</a></div>
+                        <div class="trending-project-name"><a href="https://github.com/marceldobehere/MaslOS/">MaslOS</a></div>
+                    </div>
+                    <div class="trending-project">
+                        <a href="https://github.com/shamblonaut/"><img src="res/images/profiles/shamblonaut.png" alt="pfp" class="pfp author-pfp"></a>
+                        <div class="author-handle"><a href="https://github.com/shamblonaut/">@shamblonaut</a></div>
+                        <div class="trending-project-name"><a href="https://github.com/shamblonaut/malculator/">Malculator</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
